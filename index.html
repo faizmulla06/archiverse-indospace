@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chakan Site</title>
+    <script type="module" crossorigin src="/assets/index-ym0tkuns.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D7HHaHNE.css">
+  </head>
+  <body>
+    <div id="Logo"><img src="./images/logo.png" style="object-fit: contain;" alt="logoimg"/></div>
+    <div id="root"></div>
+    <div id="bottombar">
+     <img  id="locationbtn" src="./images/location.png" style="object-fit: contain;"/>
+     <img  id="scenebtn" src="./images/site_clicked.png" style="object-fit: contain;"/>
+     <img  id="vehiclesbtn" src="./images/vehicles.png" style="object-fit: contain;"/>
+     <img  id="arbtn" src="./images/ar.png" style="object-fit: contain;"/>
+    </div>
+
+    <div id="popup">
+      <span class="close">&times;</span>
+      <iframe id="popupiframe"></iframe>
+    </div>
+    <div id="popupdarkbg"></div>
+    
+    
+    <script>
+      document.getElementById('arbtn').addEventListener('click',(e) =>{
+        window.open('https://archiverseai.8thwall.app/indospace-afr/','_blank')
+      })
+      document.getElementsByClassName('close')[0].addEventListener('click', (ev) => {
+      document.getElementById('popup').style.display = 'none'
+      document.getElementById('popupdarkbg').style.display = 'none'
+    })
+    </script>
+  </body>
+</html>
