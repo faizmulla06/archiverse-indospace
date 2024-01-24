@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chakan Site</title>
-  <script type="module" crossorigin src="/assets/index-_MT7JA2C.js"></script>
+  <script type="module" crossorigin src="/assets/index-wJvqmoAx.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-ONMrnIY8.css">
 </head>
 
@@ -78,7 +78,7 @@
       // draw the FPS
       ;;; (function () { var script = document.createElement('script'); script.onload = function () { var stats = new Stats(); document.body.appendChild(stats.dom); requestAnimationFrame(function loop() { stats.update(); requestAnimationFrame(loop) }); }; script.src = '//mrdoob.github.io/stats.js/build/stats.min.js'; document.head.appendChild(script); })()
   </script>
-  <script>
+  <!-- <script>
     //     window.onclick=function(event){
     //       if (!event.target.matches('#dropbtn')){
     //         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -103,6 +103,19 @@
       }
 
     })
+  </script> -->
+  <script>
+    let isOpen = false;
+    const dropdownContent = document.getElementById('dropdown-content');
+    const sidebarImage = document.getElementById('sidebar');
+
+    document.getElementById('sidebar').addEventListener('click', (e) => {
+      isOpen = !isOpen;
+      dropdownContent.style.display = isOpen ? 'block' : 'none';
+      
+      // Change the image source based on the dropdown state
+      sidebarImage.src = isOpen ? './images/Streetview02updated.png' : './images/sidebar.png';
+    });
   </script>
 </body>
 
